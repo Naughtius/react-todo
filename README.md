@@ -1,7 +1,5 @@
 # react-todo
 
-DEMO => https://react-news-cdea5.web.app
-
 React, typescript, mobx
 
 ## Тестовое задание
