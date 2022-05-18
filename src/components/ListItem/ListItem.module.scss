@@ -1,0 +1,63 @@
+@import "../../styles/mixins.scss";
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  border: 2px solid $c-blue;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+
+  @include media-xs {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  &_delete {
+    font-size: 15px;
+    width: 100px;
+
+    @include media-xs {
+      width: 100%;
+    }
+  }
+
+  &_text {
+    color: $c-dark;
+    font-size: 18px;
+
+    @include media-xs {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &_status {
+    font-size: 12px;
+  }
+
+  &_success {
+    font-size: 15px;
+    width: 100px;
+    margin-left: 10px;
+
+    @include media-xs {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &_btns {
+    height: 100%;
+
+    @include media-xs {
+      height: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+}

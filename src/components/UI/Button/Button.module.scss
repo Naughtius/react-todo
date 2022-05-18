@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: $transitionDefaultDuration all ease;
+  height: 100%;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+
+  &._primary {
+    background-color: $c-blue;
+    color: $c-white;
+    border: 2px solid $c-blue;
+
+    &:hover {
+      background-color: $c-blue-dark;
+      border: 2px solid $c-blue-dark;
+    }
+
+    &._outline {
+      background-color: $c-white;
+      color: $c-dark;
+
+      &:hover {
+        background-color: $c-blue;
+        color: $c-white;
+        border: 2px solid $c-blue;
+      }
+    }
+  }
+
+  &._red {
+    background-color: $c-red;
+    color: $c-white;
+    border: 2px solid $c-red;
+
+    &:hover {
+      background-color: $c-red-dark;
+      border: 2px solid $c-red-dark;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../styles/mixins.scss";
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 30%;
+  gap: 15px;
+  margin-bottom: 20px;
+  height: 50px;
+
+  @include media-xs {
+    grid-template-columns: 1fr;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  &_input {
+    @include media-xs {
+      height: 60px;
+    }
+  }
+}
